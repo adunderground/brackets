@@ -99,6 +99,7 @@ textarea:focus {
   border: 3px solid #000;
   border-color: black;
   background: #fff;
+  cursor: pointer;
 }
 
 .card {
