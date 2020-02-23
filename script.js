@@ -26,12 +26,12 @@ let isMatchingBrackets = function(string) {
       }
     }
   }
-
   if (stack.length !== 0) {
     return false;
   }
   return true;
 };
+
 
 input.addEventListener('keyup', e => {
   event.stopPropagation();
@@ -85,7 +85,7 @@ resultBox.addEventListener('click', () => {
   alert(`You can paste any javascript code snippet into a text-area input,
 and be notified whether or not the code has matching parenthesis. 
 
-Or just paste in some brackets and have fun! `);
+Or just type in some brackets and have fun! `);
 });
 
 console.log(`MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM`);
