@@ -31,10 +31,6 @@ h3,
   box-shadow: 0 0 0 0;
 }
 
-div {
-  margin: 1rem;
-}
-
 #resultBox {
   position: relative;
   border-radius: 20px;
@@ -62,6 +58,7 @@ div {
 }
 
 textarea {
+  margin
   resize: none;
   display: block;
   border-radius: 10px;
@@ -89,7 +86,7 @@ textarea:focus {
 
 #examples {
   display: inherit;
-  flex-direction: row wrap;
+  flex-direction: row nowrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -100,6 +97,7 @@ textarea:focus {
   border-color: black;
   background: #fff;
   cursor: pointer;
+  margin: 0.5rem;
 }
 
 .card {
