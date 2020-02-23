@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  /* font-family: 'VT323'; */
+  /* font-family: 'Overpass Mono'; */
+  font-family: 'Roboto Mono';
+  background: rgba(33, 174, 255, 0.493);
+}
+
+h1,
+h2,
+h3,
+input {
+  text-align: center;
+  /* display: inline-block; */
+}
+#main {
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px;
+  box-shadow: 0 0 0 0;
+}
+
+div {
+  margin: 1rem;
+  /* border: 2px solid #000; */
+  /* block-size: 10rem;
+  inline-size: 16rem; */
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#resultBox {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  /* background-color: #fff; */
+
+  transition: background-color 0.7s ease;
+}
+
+#resultBox::after {
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  content: 'i';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  top: -1;
+  left: 50%;
+  margin-left: -18px;
+  background-color: blue;
+}
+
+#examplesContainer {
+  display: inherit;
+  flex-flow: inherit;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#examples {
+  display: inherit;
+  flex-direction: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.example {
+  padding: 0.5rem;
+  border: 3px solid #000;
+  border-color: black;
+  background: #fff;
+}
+
+textarea {
+  resize: none;
+
+  display: block;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+
+  letter-spacing: 0.2em;
+  font-size: 1.3rem;
+  inline-size: 35rem;
+  block-size: 18rem;
+
+  transition: background-color 1s ease;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.pass {
+  background-color: rgba(33, 230, 33, 0.699);
+}
+
+.fail {
+  background-color: rgba(255, 0, 0, 0.815);
+}
+
+.neutral {
+  background-color: #fff;
+}
+
+/* #backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+} */
+
+/* #backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+
