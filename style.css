@@ -58,8 +58,7 @@ h3,
 }
 
 textarea {
-  margin
-  resize: none;
+  resize: horizontal;
   display: block;
   border-radius: 10px;
   padding: 20px;
@@ -120,4 +119,25 @@ textarea:focus {
 ::selection {
   background: rgba(255, 255, 255, 0.904);
   color: #329df5;
+}
+
+/* phones media querry */
+@media (max-width: 450px) {
+  *{
+    box-sizing: unset;
+  }
+  body {
+    background: rgba(248, 212, 10, 0.76);
+     display: flex;
+    justify-content: space-evenly;
+  }
+
+  textarea {
+    background-color:  rgba(33, 230, 148, 0.781);
+    inline-size: unset;
+  }
+
+  #examples {
+    display: inline-block;
+  }
 }
