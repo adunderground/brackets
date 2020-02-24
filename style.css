@@ -35,7 +35,7 @@ h3,
   position: relative;
   border-radius: 20px;
   padding: 20px;
-  transition: background-color 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 /* little info circle */
@@ -97,10 +97,15 @@ textarea:focus {
   background: #fff;
   cursor: pointer;
   margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.example:active{
+  background:orangered !important;
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -126,6 +131,8 @@ textarea:focus {
   *{
     box-sizing: unset;
   }
+
+
   body {
     background: rgba(248, 212, 10, 0.76);
      display: flex;
@@ -133,6 +140,9 @@ textarea:focus {
   }
 
   textarea {
+    margin-block-end: 3rem;
+    margin-block-start: 3rem;
+    width: 300px;
     background-color:  rgba(33, 230, 148, 0.781);
     inline-size: unset;
   }

@@ -9,15 +9,18 @@
   <script src="script.js" defer></script>
   <body>
     <div id="main">
-      <div id="resultBox" class="card">
-        <h1>PASS or FAIL</h1>
+      <div class="card">
+        <div id="resultBox">
+          <h1>PASS or FAIL</h1>
+        </div>
       </div>
-      <textarea
-        class="card"
-        cols="30"
-        rows="10"
-        placeholder="Paste your code here..."
-      ></textarea>
+      <div class="card">
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="Paste your code here..."
+        ></textarea>
+      </div>
 
       <div id="examplesContainer" class="card">
         <div id="examplesTextContainer">
@@ -35,16 +38,12 @@
               I hear {A{meri}ca} [singing], the varied carols I h(ear)
             </div>
             <div class="example fail ">
-              function fibonacci(num) {
-          if (num <= 1) return 1;
-          return fibonacci(num - 1) + fibonacci(num - 2);
-              
+              function fibonacci(num) { if (num <= 1) return 1; return
+              fibonacci(num - 1) + fibonacci(num - 2);
             </div>
             <div class="example pass ">
-              function fibonacci(num) {
-          if (num <= 1) return 1;
-          return fibonacci(num - 1) + fibonacci(num - 2);
-              }
+              function fibonacci(num) { if (num <= 1) return 1; return
+              fibonacci(num - 1) + fibonacci(num - 2); }
             </div>
           </div>
         </div>
